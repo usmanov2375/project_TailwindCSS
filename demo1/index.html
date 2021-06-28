@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="text-gray-600 body-font">
+      <div
+        class="
+          container
+          mx-auto
+          flex flex-wrap
+          p-5
+          flex-col
+          md:flex-row
+          items-center
+        "
+      >
+        <a
+          class="
+            flex
+            title-font
+            font-medium
+            items-center
+            text-gray-900
+            mb-4
+            md:mb-0
+          "
+        >
+          <svg
+            id="Capa_1"
+            enable-background="new 0 0 512 512"
+            height="50"
+            viewBox="0 0 512 512"
+            width="50"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m380.578 40.94c-2.109-5.821-5.079-11.257-11.256-11.257h-120.196c-6.207 0-9.148 5.435-11.256 11.257l-10.93 30.206 84.704 9.712 79.863-9.712z"
+                  fill="#7e707d"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m391.507 71.146-10.93-30.206c-2.109-5.821-5.079-11.257-11.256-11.257h-43.213c6.207 0 9.177 5.435 11.256 11.257l10.93 30.206z"
+                  fill="#6a5c6b"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m137.365 80.858v-36.116c0-5.91-4.811-10.722-10.722-10.722h-34.422c-5.881 0-10.692 4.812-10.692 10.722v36.116z"
+                  fill="#7e707d"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m512 197.73v-105.348c0-11.672-9.534-21.236-21.206-21.236h-363.141v126.584z"
+                  fill="#a0ddfa"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m512 343.828v-100.893c-138.55 0-248.559 0-384.347 0v122.129h363.141c11.672 0 21.206-9.564 21.206-21.236z"
+                  fill="#a0ddfa"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m426.464 188.018c-13.84-45.68-56.252-78.945-106.474-78.945-50.193 0-92.604 33.265-106.444 78.945-3.118 10.217-4.782 21.058-4.782 32.314 0 11.227 1.663 22.068 4.782 32.314 13.84 45.68 56.252 78.915 106.444 78.915 50.223 0 92.634-33.235 106.474-78.915 3.118-10.247 4.782-21.088 4.782-32.314 0-11.256-1.663-22.097-4.782-32.314z"
+                  fill="#7e707d"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m426.464 252.647c3.118-10.247 4.782-21.088 4.782-32.314 0-11.257-1.663-22.097-4.782-32.314-13.84-45.68-56.252-78.945-106.474-78.945-3.98 0-7.93.208-11.821.624 42.619 6.534 77.249 37.215 89.486 77.638.089.238.149.445.208.683 2.97 10.039 4.574 20.642 4.574 31.631 0 11.257-1.663 22.097-4.782 32.314-.059.238-.119.446-.208.683-12.919 41.7-49.718 72.915-94.446 77.638 5.554.832 11.227 1.277 16.988 1.277 50.224 0 92.635-33.235 106.475-78.915z"
+                  fill="#6a5c6b"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m512 92.382c0-11.672-9.534-21.236-21.206-21.236h-35.788c11.672 0 21.235 9.564 21.235 21.236v20.018 75.618h35.759z"
+                  fill="#75cef9"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m512 343.828v-91.181h-35.759v91.181c0 11.643-9.534 21.206-21.206 21.236h.03 35.729c11.672 0 21.206-9.564 21.206-21.236z"
+                  fill="#75cef9"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m390.646 220.332c0-11.643-2.821-22.632-7.811-32.314-11.731-22.78-35.462-38.344-62.845-38.344-27.354 0-51.084 15.563-62.815 38.344-4.99 9.682-7.811 20.672-7.811 32.314 0 11.643 2.821 22.632 7.811 32.314 11.731 22.751 35.462 38.314 62.815 38.314 27.383 0 51.114-15.563 62.845-38.314 4.99-9.682 7.811-20.671 7.811-32.314z"
+                  fill="#eff6ff"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m390.646 220.332c0-11.643-2.821-22.632-7.811-32.314-11.731-22.78-35.462-38.344-62.845-38.344-6.92 0-13.632 1.01-19.988 2.881 21.622 3.564 39.946 16.989 50.193 35.463.356.624.683 1.277 1.04 1.901 4.99 9.682 7.781 20.672 7.781 32.314 0 10.9-2.435 21.206-6.831 30.414-.327.624-.624 1.277-.95 1.901-8.761 16.989-24.205 29.968-42.857 35.463 3.772.624 7.663.95 11.613.95 27.383 0 51.114-15.563 62.845-38.314 4.989-9.683 7.81-20.672 7.81-32.315z"
+                  fill="#d9eeff"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m213.546 252.647c-3.118-10.247-4.782-21.088-4.782-32.314 0-11.257 1.663-22.097 4.782-32.314h-76.18l-16.186 27.414 16.186 37.215h76.18z"
+                  fill="#ffbc85"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m512 252.647v-64.629h-85.536c3.118 10.217 4.782 21.058 4.782 32.314 0 11.227-1.663 22.068-4.782 32.314h85.536z"
+                  fill="#ffbc85"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m512 242.935v-45.205-9.712h-35.759v9.712 45.205 9.712h35.759z"
+                  fill="#f5a96c"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m137.365 188.018v-116.872h-55.836c-13.187 0-24.532 6.683-24.532 21.236v54.649l24.918 68.401c1.129 3.119-20.731 62.342-24.918 70.42v57.976c0 11.672 9.534 21.236 21.206 21.236h59.162v-112.417z"
+                  fill="#fde588"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m95.756 280.12v-127.357c0-3.148-2.584-5.732-5.732-5.732h-33.027v138.821h33.026c3.149 0 5.733-2.584 5.733-5.732z"
+                  fill="#7e707d"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m137.365 188.018v-107.16-9.712h-9.712-15.117v9.712 284.206h15.117 9.712v-112.417-9.712-45.205z"
+                  fill="#fdd76f"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m137.365 44.742c0-5.91-4.811-10.722-10.722-10.722h-24.799c5.881 0 10.692 4.812 10.692 10.722v26.404h15.117 9.712z"
+                  fill="#6a5c6b"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  d="m457.471 120.127h-24.502c-4.268 0-7.726-3.459-7.726-7.726 0-4.268 3.459-7.726 7.726-7.726h24.502c4.268 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                  fill="#fdd76f"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m261.422 422.654-34.719-178.947c-2.02-10.514-12.296-17.434-22.78-15.415l-188.179 36.502c-10.514 2.05-17.434 12.297-15.384 22.811l34.689 178.977c2.049 10.484 12.296 17.405 22.81 15.385l188.179-36.502c10.513-2.05 17.433-12.297 15.384-22.811z"
+                  fill="#eff6ff"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m71.818 439.643 143.302-27.8c3.534-.683 6.029-3.416 5.494-6.059l-10.306-51.768-7.544-37.868-25.72 4.99c-21.562 4.188-33.294 9.682-41.877 15.741-3.653 2.554-6.712 5.198-9.712 7.9-3.415 3.059-6.742 6.148-10.722 9.237-10.87 8.405-26.611 16.603-61.984 22.929l7.573 37.839 4.128 21.295c.507 2.643 3.833 4.247 7.368 3.564z"
+                  fill="#a0ddfa"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m116.932 365.064c3.98-3.089 7.306-6.207 10.722-9.267 3-2.673 6.088-5.346 9.712-7.9 8.583-6.029 20.344-11.524 41.907-15.712l25.69-4.99-10.603-53.342c-.535-2.643-3.831-4.247-7.366-3.564l-49.629 9.623-9.712 1.901-15.117 2.911-55.539 10.781-13.335 2.584c-3.534.683-5.999 3.416-5.494 6.059l16.78 83.845c35.373-6.356 51.114-14.553 61.984-22.929z"
+                  fill="#fde588"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m204.962 327.196-10.603-53.342c-.535-2.643-3.831-4.247-7.366-3.564l-21.711 4.217c3.505-.653 6.772.95 7.276 3.594l10.633 53.313z"
+                  fill="#fdd76f"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m212.506 365.064-7.544-37.868-21.77 4.218 6.682 33.651.861 4.217 8.108 40.72c.505 2.643-1.96 5.376-5.494 6.059l21.77-4.217c3.534-.683 6.029-3.416 5.494-6.059z"
+                  fill="#75cef9"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  clip-rule="evenodd"
+                  d="m236.415 293.723-9.712-50.016c-.03-.267-.089-.535-.148-.772-1.99-8.376-9.237-14.316-17.523-14.939-1.693-.119-3.386-.03-5.108.297l-47.045 9.148c6.593-1.277 13.127 1.01 17.523 5.495 2.554 2.584 4.425 5.91 5.197 9.712 0 .059.03.119.03.178l3.534 18.207 3.831-.743c3.534-.683 6.831.921 7.366 3.564l10.603 53.342 7.544 37.868 8.108 40.72c.535 2.643-1.96 5.376-5.494 6.059l-4.485.861 3.712 19.098c2.02 10.455-4.841 20.672-15.295 22.78l46.985-9.118c10.514-2.049 17.434-12.296 15.385-22.81l-11.167-57.59z"
+                  fill="#d9eeff"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <g>
+                <path
+                  d="m70.194 447.525c-3.001 0-5.897-.84-8.253-2.437-2.692-1.825-4.495-4.51-5.078-7.561l-4.124-21.274-22.147-110.588c-1.341-7.016 3.763-13.647 11.604-15.162l143.327-27.8c7.811-1.5 15.014 2.716 16.41 9.618l26.26 131.955c.613 3.03-.046 6.202-1.86 8.91-2.132 3.182-5.684 5.458-9.746 6.242l-143.298 27.799c-1.032.201-2.07.298-3.095.298zm1.839-12.939.004.022c-.001-.007-.002-.014-.004-.022zm-25.726-129.14 21.593 107.82 3.6 18.568 140.978-27.349-25.152-126.39zm166.729 101.844c.001.009.003.017.005.025zm-169.374-109.201h.01z"
+                  fill="#7e707d"
+                />
+              </g>
+            </g>
+          </svg>
+          <span class="ml-3 text-xl">Фокус</span>
+        </a>
+        <nav
+          class="
+            md:ml-auto
+            flex flex-wrap
+            items-center
+            text-base
+            justify-center
+          "
+        >
+          <a class="mr-5 hover:text-gray-900">Акции</a>
+          <a class="mr-5 hover:text-gray-900">Поиск</a>
+          <a class="mr-5 hover:text-gray-900">Управление бронированием</a>
+        </nav>
+        <button
+          class="
+            inline-flex
+            items-center
+            bg-pink-500
+            border-0
+            py-1
+            px-3
+            focus:outline-none
+            hover:bg-pink-200
+            hover:text-gray-500
+            rounded
+            text-white
+            mt-4
+            md:mt-0
+          "
+        >
+          Вход
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- steps section -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-8 mx-auto flex flex-wrap">
+        <div class="flex flex-wrap w-full">
+          <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+            <div class="flex relative pb-12">
+              <div
+                class="
+                  h-full
+                  w-10
+                  absolute
+                  inset-0
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="
+                  flex-shrink-0
+                  w-10
+                  h-10
+                  rounded-full
+                  bg-pink-500
+                  inline-flex
+                  items-center
+                  justify-center
+                  text-white
+                  relative
+                  z-10
+                "
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="
+                    font-medium
+                    title-font
+                    text-sm text-gray-900
+                    mb-1
+                    tracking-wider
+                  "
+                >
+                  ШАГ 1
+                </h2>
+                <p class="leading-relaxed">Выбрать дату и время съемки</p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="
+                  h-full
+                  w-10
+                  absolute
+                  inset-0
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="
+                  flex-shrink-0
+                  w-10
+                  h-10
+                  rounded-full
+                  bg-pink-500
+                  inline-flex
+                  items-center
+                  justify-center
+                  text-white
+                  relative
+                  z-10
+                "
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="
+                    font-medium
+                    title-font
+                    text-sm text-gray-900
+                    mb-1
+                    tracking-wider
+                  "
+                >
+                  ШАГ 2
+                </h2>
+                <p class="leading-relaxed">Выбрать количество участников</p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="
+                  h-full
+                  w-10
+                  absolute
+                  inset-0
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="
+                  flex-shrink-0
+                  w-10
+                  h-10
+                  rounded-full
+                  bg-pink-500
+                  inline-flex
+                  items-center
+                  justify-center
+                  text-white
+                  relative
+                  z-10
+                "
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="5" r="3"></circle>
+                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="
+                    font-medium
+                    title-font
+                    text-sm text-gray-900
+                    mb-1
+                    tracking-wider
+                  "
+                >
+                  ШАГ 3
+                </h2>
+                <p class="leading-relaxed">
+                  Выбрать желаемую локацию для съемки, соответствующую условиям
+                  выше
+                </p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="
+                  h-full
+                  w-10
+                  absolute
+                  inset-0
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="
+                  flex-shrink-0
+                  w-10
+                  h-10
+                  rounded-full
+                  bg-pink-500
+                  inline-flex
+                  items-center
+                  justify-center
+                  text-white
+                  relative
+                  z-10
+                "
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="
+                    font-medium
+                    title-font
+                    text-sm text-gray-900
+                    mb-1
+                    tracking-wider
+                  "
+                >
+                  ШАГ 4
+                </h2>
+                <p class="leading-relaxed">
+                  Зарезервировать конкретные зоны на территории выбранной
+                  локации
+                </p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="
+                  h-full
+                  w-10
+                  absolute
+                  inset-0
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="
+                  flex-shrink-0
+                  w-10
+                  h-10
+                  rounded-full
+                  bg-pink-500
+                  inline-flex
+                  items-center
+                  justify-center
+                  text-white
+                  relative
+                  z-10
+                "
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="
+                    font-medium
+                    title-font
+                    text-sm text-gray-900
+                    mb-1
+                    tracking-wider
+                  "
+                >
+                  ШАГ 5
+                </h2>
+                <p class="leading-relaxed">
+                  Определить перечень дополнительных услуг
+                </p>
+              </div>
+            </div>
+            <div class="flex relative">
+              <div
+                class="
+                  flex-shrink-0
+                  w-10
+                  h-10
+                  rounded-full
+                  bg-pink-500
+                  inline-flex
+                  items-center
+                  justify-center
+                  text-white
+                  relative
+                  z-10
+                "
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="
+                    font-medium
+                    title-font
+                    text-sm text-gray-900
+                    mb-1
+                    tracking-wider
+                  "
+                >
+                  ЗАКАЗ
+                </h2>
+                <p class="leading-relaxed">Оформить заказ</p>
+              </div>
+            </div>
+          </div>
+          <img
+            class="
+              lg:w-3/5
+              md:w-1/2
+              object-cover object-center
+              rounded-lg
+              md:mt-0
+              mt-12
+            "
+            src="img/1.jpg"
+            alt="step"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button
+          class="
+            inline-flex
+            text-white
+            bg-pink-500
+            border-0
+            py-2
+            px-6
+            focus:outline-none
+            hover:bg-pink-600
+            rounded
+            text-lg
+          "
+        >
+          Оформить
+        </button>
+        <button
+          class="
+            ml-4
+            inline-flex
+            text-gray-700
+            bg-gray-100
+            border-0
+            py-2
+            px-6
+            focus:outline-none
+            hover:bg-gray-200
+            rounded
+            text-lg
+          "
+        >
+          Шаг 1
+        </button>
+      </div>
+    </section>
+    <!-- end steps section -->
+    <!-- about section -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-8 mx-auto">
+        <div class="flex flex-col text-center w-full mb-6">
+          <h1
+            class="
+              sm:text-3xl
+              text-2xl
+              font-medium
+              title-font
+              mb-4
+              text-gray-900
+            "
+          >
+            Девиз компании «Фокус»: Сделай жизнь ярче!
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Главная цель компании – сохранить самые яркие моменты жизни клиентов
+            на долгие годы.
+          </p>
+        </div>
+        <h2
+          class="text-2xl font-medium title-font text-gray-900 mb-8 text-center"
+        >
+          Отзывы
+        </h2>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Спасибо большое! Локация "Черная жемчужина" просто супер! Все в
+                бурных эмоциях, фото получились просто огонь!
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="img/2.jpg"
+                  class="
+                    w-12
+                    h-12
+                    rounded-full
+                    flex-shrink-0
+                    object-cover object-center
+                  "
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Алина</span
+                  >
+                  <span class="text-gray-500 text-sm">Альметьевск</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Долго думала как отпразновать годовщину свадьбы. Увидела фото
+                ваших локаций и влюбилась! Отлично провели время с мужем,
+                сделали кучу фото для инстаграмма и даже распечатали несколько
+                на память)
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="img/7.jpg"
+                  class="
+                    w-12
+                    h-12
+                    rounded-full
+                    flex-shrink-0
+                    object-cover object-center
+                  "
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Марина</span
+                  >
+                  <span class="text-gray-500 text-sm">Бугульма</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Всё очень понравилось. Воспользовались с девочками услугами
+                вашего фотографа Ильи, теперь фотаемся только у него!
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="img/8.jpg"
+                  class="
+                    w-12
+                    h-12
+                    rounded-full
+                    flex-shrink-0
+                    object-cover object-center
+                  "
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Алена и Ко</span
+                  >
+                  <span class="text-gray-500 text-sm">Лениногорск</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Уже не первый раз устраиваю себе праздник, организуя фотосессию
+                в ваших локациях. Не дорого, а эмоций на весь день
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="img/9.jpg"
+                  class="
+                    w-12
+                    h-12
+                    rounded-full
+                    flex-shrink-0
+                    object-cover object-center
+                  "
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Наталия</span
+                  >
+                  <span class="text-gray-500 text-sm">Бавлы</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about section -->
+    <!-- search section -->
+    <section class="text-gray-600 body-font relative">
+      <div class="container px-5 py-8 mx-auto">
+        <div class="flex flex-col text-center w-full mb-8">
+          <h1
+            class="
+              sm:text-3xl
+              text-2xl
+              font-medium
+              title-font
+              mb-4
+              text-gray-900
+            "
+          >
+            Поиск
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Введите параметры
+          </p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="region" class="leading-7 text-sm text-gray-600"
+                  >Выбор региона</label
+                >
+                <input
+                  type="text"
+                  id="region"
+                  name="region"
+                  class="
+                    w-full
+                    bg-gray-100 bg-opacity-50
+                    rounded
+                    border border-gray-300
+                    focus:border-pink-500
+                    focus:bg-white
+                    focus:ring-2 focus:ring-pink-200
+                    text-base
+                    outline-none
+                    text-gray-700
+                    py-1
+                    px-3
+                    leading-8
+                    transition-colors
+                    duration-200
+                    ease-in-out
+                  "
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="data" class="leading-7 text-sm text-gray-600"
+                  >Дата и время съемки</label
+                >
+                <input
+                  type="text"
+                  id="data"
+                  name="data"
+                  class="
+                    w-full
+                    bg-gray-100 bg-opacity-50
+                    rounded
+                    border border-gray-300
+                    focus:border-pink-500
+                    focus:bg-white
+                    focus:ring-2 focus:ring-pink-200
+                    text-base
+                    outline-none
+                    text-gray-700
+                    py-1
+                    px-3
+                    leading-8
+                    transition-colors
+                    duration-200
+                    ease-in-out
+                  "
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="num" class="leading-7 text-sm text-gray-600"
+                  >Количество участников</label
+                >
+                <input
+                  type="text"
+                  id="num"
+                  name="num"
+                  class="
+                    w-full
+                    bg-gray-100 bg-opacity-50
+                    rounded
+                    border border-gray-300
+                    focus:border-pink-500
+                    focus:bg-white
+                    focus:ring-2 focus:ring-pink-200
+                    text-base
+                    outline-none
+                    text-gray-700
+                    py-1
+                    px-3
+                    leading-8
+                    transition-colors
+                    duration-200
+                    ease-in-out
+                  "
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button
+                class="
+                  flex
+                  mx-auto
+                  text-white
+                  bg-pink-500
+                  border-0
+                  py-2
+                  px-8
+                  focus:outline-none
+                  hover:bg-pink-600
+                  rounded
+                  text-lg
+                "
+              >
+                Найти
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end search section -->
+    <!-- promotion section -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-8 mx-auto">
+        <div class="flex flex-col">
+          <div class="h-1 bg-gray-200 rounded overflow-hidden">
+            <div class="w-24 h-full bg-pink-500"></div>
+          </div>
+          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+            <h1
+              class="
+                sm:w-2/5
+                text-gray-900
+                font-medium
+                title-font
+                text-2xl
+                mb-2
+                sm:mb-0
+              "
+            >
+              Наши акции
+            </h1>
+          </div>
+        </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="img/promotion1.jpg"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Скидка до 60%. За заказ зоны (до 5 человек) в локации «Черная
+              жемчужина»
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Устали от городского шума, хотите провести фотосессию за городом в
+              живописной локации? Заказывайте место в локации «Черная
+              жемчужина».
+            </p>
+            <a class="text-pink-500 inline-flex items-center mt-3"
+              >Подробнее...
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="img/promotion2.jpg"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Скидка до 51% при заказе услуг фотографа и использовании реквизита
+              локации.
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Уютное место для организации детской фото-видео съемки «Поляна
+              сказок»
+            </p>
+            <a class="text-pink-500 inline-flex items-center mt-3"
+              >Подробнее...
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="img/promotion3.jpg"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Скидка до 25%. Закажи праздник "Под ключ"
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              При выборе локации для 5 человек и больше, а также при заказе всех
+              дополнительных услуг можно очень неплохо сэкономить!
+            </p>
+            <a class="text-pink-500 inline-flex items-center mt-3"
+              >Подробнее...
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end promotion section -->
+    <!-- subscribe section-->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-8 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1
+            class="
+              sm:text-3xl
+              text-2xl
+              font-medium
+              title-font
+              mb-4
+              text-gray-900
+            "
+          >
+            Подписка
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Подпишитесь на наши закрытые акции
+          </p>
+        </div>
+        <div
+          class="
+            flex
+            lg:w-2/3
+            w-full
+            sm:flex-row
+            flex-col
+            mx-auto
+            px-8
+            sm:space-x-4 sm:space-y-0
+            space-y-4
+            sm:px-0
+            items-end
+          "
+        >
+          <div class="relative flex-grow w-full">
+            <label for="email" class="leading-7 text-sm text-gray-600"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="
+                w-full
+                bg-gray-100 bg-opacity-50
+                rounded
+                border border-gray-300
+                focus:border-pink-500
+                focus:bg-transparent
+                focus:ring-2 focus:ring-pink-200
+                text-base
+                outline-none
+                text-gray-700
+                py-1
+                px-3
+                leading-8
+                transition-colors
+                duration-200
+                ease-in-out
+              "
+            />
+          </div>
+          <button
+            class="
+              text-white
+              bg-pink-500
+              border-0
+              py-2
+              px-8
+              focus:outline-none
+              hover:bg-pink-600
+              rounded
+              text-lg
+            "
+          >
+            Отправить
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end subscribe section-->
+    <!-- footer -->
+    <footer class="text-gray-600 body-font">
+      <div
+        class="
+          container
+          px-5
+          py-8
+          mx-auto
+          flex
+          md:items-center
+          lg:items-start
+          md:flex-row md:flex-nowrap
+          flex-wrap flex-col
+        "
+      >
+        <div
+          class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"
+        >
+          <a
+            class="
+              flex
+              title-font
+              font-medium
+              items-center
+              md:justify-start
+              justify-center
+              text-gray-900
+            "
+          >
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg> -->
+            <svg
+              id="Capa_1"
+              enable-background="new 0 0 512 512"
+              height="50"
+              viewBox="0 0 512 512"
+              width="50"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m380.578 40.94c-2.109-5.821-5.079-11.257-11.256-11.257h-120.196c-6.207 0-9.148 5.435-11.256 11.257l-10.93 30.206 84.704 9.712 79.863-9.712z"
+                    fill="#7e707d"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m391.507 71.146-10.93-30.206c-2.109-5.821-5.079-11.257-11.256-11.257h-43.213c6.207 0 9.177 5.435 11.256 11.257l10.93 30.206z"
+                    fill="#6a5c6b"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m137.365 80.858v-36.116c0-5.91-4.811-10.722-10.722-10.722h-34.422c-5.881 0-10.692 4.812-10.692 10.722v36.116z"
+                    fill="#7e707d"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m512 197.73v-105.348c0-11.672-9.534-21.236-21.206-21.236h-363.141v126.584z"
+                    fill="#a0ddfa"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m512 343.828v-100.893c-138.55 0-248.559 0-384.347 0v122.129h363.141c11.672 0 21.206-9.564 21.206-21.236z"
+                    fill="#a0ddfa"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m426.464 188.018c-13.84-45.68-56.252-78.945-106.474-78.945-50.193 0-92.604 33.265-106.444 78.945-3.118 10.217-4.782 21.058-4.782 32.314 0 11.227 1.663 22.068 4.782 32.314 13.84 45.68 56.252 78.915 106.444 78.915 50.223 0 92.634-33.235 106.474-78.915 3.118-10.247 4.782-21.088 4.782-32.314 0-11.256-1.663-22.097-4.782-32.314z"
+                    fill="#7e707d"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m426.464 252.647c3.118-10.247 4.782-21.088 4.782-32.314 0-11.257-1.663-22.097-4.782-32.314-13.84-45.68-56.252-78.945-106.474-78.945-3.98 0-7.93.208-11.821.624 42.619 6.534 77.249 37.215 89.486 77.638.089.238.149.445.208.683 2.97 10.039 4.574 20.642 4.574 31.631 0 11.257-1.663 22.097-4.782 32.314-.059.238-.119.446-.208.683-12.919 41.7-49.718 72.915-94.446 77.638 5.554.832 11.227 1.277 16.988 1.277 50.224 0 92.635-33.235 106.475-78.915z"
+                    fill="#6a5c6b"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m512 92.382c0-11.672-9.534-21.236-21.206-21.236h-35.788c11.672 0 21.235 9.564 21.235 21.236v20.018 75.618h35.759z"
+                    fill="#75cef9"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m512 343.828v-91.181h-35.759v91.181c0 11.643-9.534 21.206-21.206 21.236h.03 35.729c11.672 0 21.206-9.564 21.206-21.236z"
+                    fill="#75cef9"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m390.646 220.332c0-11.643-2.821-22.632-7.811-32.314-11.731-22.78-35.462-38.344-62.845-38.344-27.354 0-51.084 15.563-62.815 38.344-4.99 9.682-7.811 20.672-7.811 32.314 0 11.643 2.821 22.632 7.811 32.314 11.731 22.751 35.462 38.314 62.815 38.314 27.383 0 51.114-15.563 62.845-38.314 4.99-9.682 7.811-20.671 7.811-32.314z"
+                    fill="#eff6ff"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m390.646 220.332c0-11.643-2.821-22.632-7.811-32.314-11.731-22.78-35.462-38.344-62.845-38.344-6.92 0-13.632 1.01-19.988 2.881 21.622 3.564 39.946 16.989 50.193 35.463.356.624.683 1.277 1.04 1.901 4.99 9.682 7.781 20.672 7.781 32.314 0 10.9-2.435 21.206-6.831 30.414-.327.624-.624 1.277-.95 1.901-8.761 16.989-24.205 29.968-42.857 35.463 3.772.624 7.663.95 11.613.95 27.383 0 51.114-15.563 62.845-38.314 4.989-9.683 7.81-20.672 7.81-32.315z"
+                    fill="#d9eeff"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m213.546 252.647c-3.118-10.247-4.782-21.088-4.782-32.314 0-11.257 1.663-22.097 4.782-32.314h-76.18l-16.186 27.414 16.186 37.215h76.18z"
+                    fill="#ffbc85"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m512 252.647v-64.629h-85.536c3.118 10.217 4.782 21.058 4.782 32.314 0 11.227-1.663 22.068-4.782 32.314h85.536z"
+                    fill="#ffbc85"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m512 242.935v-45.205-9.712h-35.759v9.712 45.205 9.712h35.759z"
+                    fill="#f5a96c"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m137.365 188.018v-116.872h-55.836c-13.187 0-24.532 6.683-24.532 21.236v54.649l24.918 68.401c1.129 3.119-20.731 62.342-24.918 70.42v57.976c0 11.672 9.534 21.236 21.206 21.236h59.162v-112.417z"
+                    fill="#fde588"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m95.756 280.12v-127.357c0-3.148-2.584-5.732-5.732-5.732h-33.027v138.821h33.026c3.149 0 5.733-2.584 5.733-5.732z"
+                    fill="#7e707d"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m137.365 188.018v-107.16-9.712h-9.712-15.117v9.712 284.206h15.117 9.712v-112.417-9.712-45.205z"
+                    fill="#fdd76f"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m137.365 44.742c0-5.91-4.811-10.722-10.722-10.722h-24.799c5.881 0 10.692 4.812 10.692 10.722v26.404h15.117 9.712z"
+                    fill="#6a5c6b"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    d="m457.471 120.127h-24.502c-4.268 0-7.726-3.459-7.726-7.726 0-4.268 3.459-7.726 7.726-7.726h24.502c4.268 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                    fill="#fdd76f"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m261.422 422.654-34.719-178.947c-2.02-10.514-12.296-17.434-22.78-15.415l-188.179 36.502c-10.514 2.05-17.434 12.297-15.384 22.811l34.689 178.977c2.049 10.484 12.296 17.405 22.81 15.385l188.179-36.502c10.513-2.05 17.433-12.297 15.384-22.811z"
+                    fill="#eff6ff"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m71.818 439.643 143.302-27.8c3.534-.683 6.029-3.416 5.494-6.059l-10.306-51.768-7.544-37.868-25.72 4.99c-21.562 4.188-33.294 9.682-41.877 15.741-3.653 2.554-6.712 5.198-9.712 7.9-3.415 3.059-6.742 6.148-10.722 9.237-10.87 8.405-26.611 16.603-61.984 22.929l7.573 37.839 4.128 21.295c.507 2.643 3.833 4.247 7.368 3.564z"
+                    fill="#a0ddfa"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m116.932 365.064c3.98-3.089 7.306-6.207 10.722-9.267 3-2.673 6.088-5.346 9.712-7.9 8.583-6.029 20.344-11.524 41.907-15.712l25.69-4.99-10.603-53.342c-.535-2.643-3.831-4.247-7.366-3.564l-49.629 9.623-9.712 1.901-15.117 2.911-55.539 10.781-13.335 2.584c-3.534.683-5.999 3.416-5.494 6.059l16.78 83.845c35.373-6.356 51.114-14.553 61.984-22.929z"
+                    fill="#fde588"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m204.962 327.196-10.603-53.342c-.535-2.643-3.831-4.247-7.366-3.564l-21.711 4.217c3.505-.653 6.772.95 7.276 3.594l10.633 53.313z"
+                    fill="#fdd76f"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m212.506 365.064-7.544-37.868-21.77 4.218 6.682 33.651.861 4.217 8.108 40.72c.505 2.643-1.96 5.376-5.494 6.059l21.77-4.217c3.534-.683 6.029-3.416 5.494-6.059z"
+                    fill="#75cef9"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="m236.415 293.723-9.712-50.016c-.03-.267-.089-.535-.148-.772-1.99-8.376-9.237-14.316-17.523-14.939-1.693-.119-3.386-.03-5.108.297l-47.045 9.148c6.593-1.277 13.127 1.01 17.523 5.495 2.554 2.584 4.425 5.91 5.197 9.712 0 .059.03.119.03.178l3.534 18.207 3.831-.743c3.534-.683 6.831.921 7.366 3.564l10.603 53.342 7.544 37.868 8.108 40.72c.535 2.643-1.96 5.376-5.494 6.059l-4.485.861 3.712 19.098c2.02 10.455-4.841 20.672-15.295 22.78l46.985-9.118c10.514-2.049 17.434-12.296 15.385-22.81l-11.167-57.59z"
+                    fill="#d9eeff"
+                    fill-rule="evenodd"
+                  />
+                </g>
+                <g>
+                  <path
+                    d="m70.194 447.525c-3.001 0-5.897-.84-8.253-2.437-2.692-1.825-4.495-4.51-5.078-7.561l-4.124-21.274-22.147-110.588c-1.341-7.016 3.763-13.647 11.604-15.162l143.327-27.8c7.811-1.5 15.014 2.716 16.41 9.618l26.26 131.955c.613 3.03-.046 6.202-1.86 8.91-2.132 3.182-5.684 5.458-9.746 6.242l-143.298 27.799c-1.032.201-2.07.298-3.095.298zm1.839-12.939.004.022c-.001-.007-.002-.014-.004-.022zm-25.726-129.14 21.593 107.82 3.6 18.568 140.978-27.349-25.152-126.39zm166.729 101.844c.001.009.003.017.005.025zm-169.374-109.201h.01z"
+                    fill="#7e707d"
+                  />
+                </g>
+              </g>
+            </svg>
+            <span class="ml-3 text-xl">Фокус</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">Телефон “8 (800) 333-30-30”</p>
+        </div>
+        <div
+          class="
+            flex-grow flex flex-wrap
+            md:pl-20
+            -mb-10
+            md:mt-0
+            mt-10
+            md:text-left
+            text-center
+          "
+        >
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Home </a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Login </a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Sign up </a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Contact </a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">News </a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Return </a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Feedback</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div
+          class="
+            container
+            mx-auto
+            py-4
+            px-5
+            flex flex-wrap flex-col
+            sm:flex-row
+          "
+        >
+          <p class="text-gray-500 text-sm text-center sm:text-left">
+            © 2021 Tailblocks —
+            <a
+              href="https://twitter.com/knyttneve"
+              rel="noopener noreferrer"
+              class="text-gray-600 ml-1"
+              target="_blank"
+              >@musmanov</a
+            >
+          </p>
+          <span
+            class="
+              inline-flex
+              sm:ml-auto
+              sm:mt-0
+              mt-2
+              justify-center
+              sm:justify-start
+            "
+          >
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>
